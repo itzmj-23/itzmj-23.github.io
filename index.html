@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="navbar__header">
+      <a href="javascript:void(0)" class="navbar__sidebar-toggle" onclick="toggleSidebar()">
+        <i class='bx bx-menu navbar__toggle-icon'></i>
+      </a>
+        <div class="navbar-logo">
+          <img class="navbar-logo__image" src="assets/images/namria.png" alt="">
+        </div>
+    </div>
+    <div class="navbar-left">
+    </div>
+    <div class="navbar-right">
+      <div class="username">
+        <span>Juan Dela Cruz</span>
+      </div>
+      <div class="avatar">
+        <!-- Avatar image -->
+        <img class="avatar__image" src="assets/images/avatar.jpg" />
+      </div>
+    </div>
+  </nav>
+  <aside class="sidebar">
+    <div class="sidebar__header">
+      <a href="#">
+        <img src="assets/images/SPIMS.png" alt="" srcset="" />
+        <span class="sidebar__header-title">SPIMS</span>
+      </a>
+    </div>
+    <div class="sidebar__subheader">
+      <p>Strategic Performance Information Management System</p>
+    </div>
+    <div class="sidebar__menu">
+      <div class="sidebar__menu-header">
+        <span>Menu</span>
+      </div>
+      <div class="sidebar__list">
+        <div class="sidebar__items">
+          <div class="sidebar__dropdown">
+            <a href="" class="sidebar__link">
+              <span class="sidebar__name">Transaction</span>
+              <i class='bx bxs-chevron-down arrow sidebar__icon sidebar__dropdown-icon'></i>
+            </a>
+            <div class="sidebar__dropdown-collapse">
+              <div class="sidebar__dropdown-content">
+                <a href="#transaction1" class="sidebar__dropdown-item">Transaction One</a>
+                <a href="#transaction2" class="sidebar__dropdown-item">Transaction Two</a>
+                <a href="#transaction3" class="sidebar__dropdown-item">Transaction Three</a>
+              </div>
+            </div>
+          </div>
+          <div class="sidebar__dropdown">
+            <a href="" class="sidebar__link">
+              <span class="sidebar__name">Query</span>
+              <i class='bx bxs-chevron-down arrow sidebar__icon sidebar__dropdown-icon'></i>
+            </a>
+            <div class="sidebar__dropdown-collapse">
+              <div class="sidebar__dropdown-content">
+                <a href="#" class="sidebar__dropdown-item">Query One</a>
+                <a href="#" class="sidebar__dropdown-item">Query Two</a>
+                <a href="#" class="sidebar__dropdown-item">Query Three</a>
+              </div>
+            </div>
+          </div>
+          <div class="sidebar__dropdown">
+            <a href="" class="sidebar__link">
+              <span class="sidebar__name">Report</span>
+              <i class='bx bxs-chevron-down arrow sidebar__icon sidebar__dropdown-icon'></i>
+            </a>
+            <div class="sidebar__dropdown-collapse">
+              <div class="sidebar__dropdown-content">
+                <a href="#" class="sidebar__dropdown-item">Report One</a>
+                <a href="#" class="sidebar__dropdown-item">Report Two</a>
+                <a href="#" class="sidebar__dropdown-item">Report Three</a>
+              </div>
+            </div>
+          </div>
+          <div class="sidebar__dropdown">
+            <a href="" class="sidebar__link">
+              <span class="sidebar__name">Utility</span>
+              <i class='bx bxs-chevron-down arrow sidebar__icon sidebar__dropdown-icon'></i>
+            </a>
+            <div class="sidebar__dropdown-collapse">
+              <div class="sidebar__dropdown-content">
+                <a href="#" class="sidebar__dropdown-item">Utility One</a>
+                <a href="#" class="sidebar__dropdown-item">Utility Two</a>
+                <a href="#" class="sidebar__dropdown-item">Utility Three</a>
+                <a href="#" class="sidebar__dropdown-item">Utility Four</a>
+                <a href="#" class="sidebar__dropdown-item">Utility Five</a>
+                <a href="#" class="sidebar__dropdown-item">Utility Six</a>
+                <a href="#" class="sidebar__dropdown-item">Utility Seven</a>
+                <a href="#" class="sidebar__dropdown-item">Utility Eight</a>
+                <a href="#" class="sidebar__dropdown-item">Utility Nine</a>
+                <a href="#" class="sidebar__dropdown-item">Utility Ten</a>
+                <a href="#" class="sidebar__dropdown-item">Utility Eleven</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sidebar__resource-links">
+      <div class="sidebar__resource-header">
+        <span>Resources</span>
+      </div>
+      <div class="sidebar__list">
+        <div class="sidebar__items">
+          <a href="#user_manual" class="sidebar__link active">
+            <span class="sidebar__name">User Manual</span>
+          </a>
+          <a href="#memos" class="sidebar__link">
+            <span class="sidebar__name">Memos</span>
+          </a>
+          <a href="#survey" class="sidebar__link">
+            <span class="sidebar__name">Survey</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="sidebar__info">
+      <p>This system manages the
+        performance assessment of the
+        individual employees and its
+        alignment to the agency's
+        organizational vision, mission
+        and strategic goals. It records
+        the targets and
+        accomplishments of the
+        agency, division and
+        employees, and generates the
+        Office Performance
+        Commitment and Review
+        (OPCR), Division Performance
+        Commitment and Review
+        (DPCR), and Individual
+        Performance Commitment and
+        Review (IPCR) reports.</p>
+    </div>
+  </aside>
+  <main class="container">
+    <div class="container__header">
+      <div class="row">
+        <div class="col">
+          <h2>
+            Dashboard
+          </h2>
+        </div>
+        <div class="col">
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="grid-row">
+        <div class="grid-row__grid-item">
+          <div class="card">
+            <!-- Cover -->
+            <div class="card__header stat-card">
+              <span class="card__header-name">Individual Rating</span>
+              <span class="card__year">2022</span>
+            </div>
+
+            <!-- Content -->
+            <div class="card__content stat-card">
+              <img src="assets/images/stat cards.jpg" alt="" srcset="" width="90%">
+            </div>
+          </div>
+        </div>
+        <div class="grid-row__grid-item">
+          <div class="card">
+            <!-- Cover -->
+            <div class="card__header stat-card">
+              <span class="card__header-name">Division Rating</span>
+              <span class="card__year">2022</span>
+            </div>
+
+            <!-- Content -->
+            <div class="card__content stat-card">
+              <img src="assets/images/stat cards.jpg" alt="" srcset="" width="90%">
+            </div>
+          </div>
+        </div>
+        <div class="grid-row__grid-item">
+          <div class="card">
+            <!-- Cover -->
+            <div class="card__header stat-card">
+              <span class="card__header-name">Branch Rating</span>
+              <span class="card__year">2022</span>
+            </div>
+
+            <!-- Content -->
+            <div class="card__content stat-card">
+              <img src="assets/images/stat cards.jpg" alt="" srcset="" width="90%">
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="col">
+          <div class="card">
+            <!-- Cover -->
+            <div class="card__header">My Ratings</div>
+
+            <!-- Content -->
+            <div class="card__content">
+              <img src="assets/images/bar_chart.jpg" alt="" width="70%">
+            </div>
+          </div>
+        </div>
+      </div>
+      CONTENT
+      <ul>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+      </ul>
+    </section>
+  </main>
+
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
