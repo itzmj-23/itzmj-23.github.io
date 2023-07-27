@@ -92,7 +92,7 @@ img {
   border-color: #263238;
   width: 250px;
   display: flex;
-  justify-content: center;
+  justify-content: left;
 }
 
 .navbar__sidebar-toggle {
@@ -141,6 +141,8 @@ img {
 
 .username {
   font-weight: 500;
+  font-size: var(--normal-font-size);
+  transition: all 0.5s ease-in-out;
 }
 
 .avatar {
@@ -485,6 +487,16 @@ img {
 @media (min-width: 481px) and (max-width: 767px) {
   .sidebar {
     display: none;
+    box-shadow:0 0 0 10000px rgba(0,0,0,.50);
+  }
+  .navbar__header, .navbar-right {
+    width: 50%;
+  }
+  .navbar__header {
+    justify-content: left;
+  }
+  .navbar-right {
+    justify-content: right;
   }
   .navbar__sidebar-toggle {
     visibility: visible;
@@ -499,13 +511,40 @@ img {
   ##Screen = B/w 0px to 479px
 */
 @media screen and (max-width: 480px) {
-  .sidebar {
-    display: none;
+  .navbar__header, .navbar-right {
+    width: 50%;
+  }
+  .navbar__header {
+    justify-content: left;
+  }
+  .navbar-right {
+    justify-content: right;
+  }
+  .username {
+    font-size: var(--small-font-size);
+    text-align: right;
   }
   .navbar__sidebar-toggle {
     visibility: visible;
   }
+  .sidebar {
+    display: none;
+    box-shadow:0 0 0 10000px rgba(0,0,0,.50);
+  }
+  
   .container {
     margin: 0px 0px 15px 0;
   }
+}
+
+
+/* Test Grid CSS */
+.testrow {
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 1rem;
+}
+
+.testcol {
+  background-color: blue;
 }
